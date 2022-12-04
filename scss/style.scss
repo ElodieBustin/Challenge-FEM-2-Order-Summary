@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #D6E1FF;
+    background-color: $paleBlue;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
     height: 100vh;
@@ -16,6 +16,8 @@ body{
 
     @include breakpoint-up(desktop){
         background-image: url('/images/pattern-background-desktop.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
 }
 
@@ -26,6 +28,10 @@ body{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 2px 15px 20px 0 rgba(14, 48, 59, 0.2);
+
+    @include breakpoint-up(desktop){
+        width: 420px;
+       }
 
 
     &__image{
@@ -38,6 +44,12 @@ body{
         padding: 1rem 1.5rem;
         text-align: center;
 
+        @include breakpoint-up(desktop){
+            padding: 1rem 2.3rem ;
+           }
+
+
+
         &__title{
             font-weight: 900;
             font-size: 1.5rem;
@@ -47,7 +59,6 @@ body{
             color: $desaturatedBlue;
             line-height: 25px;
             margin: 1.5rem;
-
         }
     
 

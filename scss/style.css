@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #D6E1FF;
+  background-color: #e0e8ff;
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
   height: 100vh;
@@ -18,6 +18,8 @@ body {
 @media (min-width: 700px) {
   body {
     background-image: url("/images/pattern-background-desktop.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -31,6 +33,12 @@ body {
           box-shadow: 2px 15px 20px 0 rgba(14, 48, 59, 0.2);
 }
 
+@media (min-width: 700px) {
+  .orderSummary {
+    width: 420px;
+  }
+}
+
 .orderSummary__image img {
   width: 100%;
 }
@@ -38,6 +46,12 @@ body {
 .orderSummary .container {
   padding: 1rem 1.5rem;
   text-align: center;
+}
+
+@media (min-width: 700px) {
+  .orderSummary .container {
+    padding: 1rem 2.3rem;
+  }
 }
 
 .orderSummary .container__title {
