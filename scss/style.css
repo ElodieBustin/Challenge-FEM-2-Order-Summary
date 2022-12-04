@@ -119,6 +119,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.orderSummary .container .annualPlan__changeBtn:hover {
+  opacity: 0.7;
+  text-decoration: none;
 }
 
 .orderSummary .container .payContainer {
@@ -133,6 +140,13 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 2px 15px 20px 0 rgba(14, 48, 59, 0.2);
           box-shadow: 2px 15px 20px 0 rgba(14, 48, 59, 0.2);
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.orderSummary .container .payContainer__paymentBtn:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .orderSummary .container .payContainer__cancelBtn {
@@ -140,5 +154,10 @@ body {
   margin-bottom: 1.2rem;
   color: #7280a7;
   font-size: 0.9rem;
+}
+
+.orderSummary .container .payContainer__cancelBtn:hover {
+  color: #1f2f56;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
