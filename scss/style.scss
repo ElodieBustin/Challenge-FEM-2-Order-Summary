@@ -13,6 +13,10 @@ body{
     font-size: 16px;
     height: 100vh;
     display: flex;
+
+    @include breakpoint-up(desktop){
+        background-image: url('/images/pattern-background-desktop.svg');
+    }
 }
 
 .orderSummary{
@@ -21,6 +25,7 @@ body{
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 2px 15px 20px 0 rgba(14, 48, 59, 0.2);
 
 
     &__image{
@@ -100,7 +105,7 @@ body{
                 padding: 1rem;
                 margin: 2rem 0;
                 border-radius: 10px;
-                box-shadow: 2px 15px 10px 0 rgba(11, 128, 167, 0.2);
+                box-shadow: 2px 15px 20px 0 rgba(14, 48, 59, 0.2);
                 
             }
 

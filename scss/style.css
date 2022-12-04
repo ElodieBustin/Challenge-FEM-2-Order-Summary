@@ -15,12 +15,20 @@ body {
   display: flex;
 }
 
+@media (min-width: 700px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+}
+
 .orderSummary {
   width: 370px;
   margin: auto;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  -webkit-box-shadow: 2px 15px 20px 0 rgba(14, 48, 59, 0.2);
+          box-shadow: 2px 15px 20px 0 rgba(14, 48, 59, 0.2);
 }
 
 .orderSummary__image img {
@@ -109,8 +117,8 @@ body {
   padding: 1rem;
   margin: 2rem 0;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 15px 10px 0 rgba(11, 128, 167, 0.2);
-          box-shadow: 2px 15px 10px 0 rgba(11, 128, 167, 0.2);
+  -webkit-box-shadow: 2px 15px 20px 0 rgba(14, 48, 59, 0.2);
+          box-shadow: 2px 15px 20px 0 rgba(14, 48, 59, 0.2);
 }
 
 .orderSummary .container .payContainer__cancelBtn {
